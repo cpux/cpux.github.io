@@ -20,17 +20,31 @@ nav ol {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  flex: 1 1 auto;
 }
 
 nav li {
-  width: calc(25% - 30px);
+  width: 100%;
   text-align: center;
   margin: 15px;
   display: flex;
 }
 
+@media screen and (min-width: 500px) {
+  nav li {
+    width: calc(50% - 30px);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  nav li {
+    width: calc(25% - 30px);
+  }
+}
+
 nav li a {
   display: block;
+  width: 100%;
   padding: 30px;
   color: #06c;
   border: 1px solid #ccc;
