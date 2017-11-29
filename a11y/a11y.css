@@ -19,12 +19,14 @@ nav ol {
   margin: 0 -15px;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
 nav li {
   width: calc(25% - 30px);
   text-align: center;
   margin: 15px;
+  display: flex;
 }
 
 nav li a {
