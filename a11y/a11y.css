@@ -1,4 +1,70 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
+  padding: 30px;
   font: 16px/1.5em "Overpass", Arial, sans-serif;
   color: #333;
+}
+
+nav {
+  margin: 60px 0 0;
+}
+
+nav ol {
+  list-style: none;
+  margin: 0 -15px;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  width: calc(25% - 30px);
+  text-align: center;
+  margin: 15px;
+}
+
+nav li a {
+  display: block;
+  padding: 30px;
+  color: #06c;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0,0,0,.15);
+  text-decoration: none;
+}
+
+nav li a:hover,
+nav li a:focus {
+  border-color: #06c;
+}
+
+nav .num::before {
+  display: block;
+  color: #8c8c8c;
+  font-size: 2em;
+  margin-bottom: .5em;
+}
+
+nav li a:hover .num::before,
+nav li a:focus .num::before {
+  color: #06c;
+}
+
+nav li:first-child .num::before {
+  content: "1";
+}
+
+nav li:nth-child(2) .num::before {
+  content: "2";
+}
+
+nav li:nth-child(3) .num::before {
+  content: "3";
+}
+
+nav li:nth-child(4) .num::before {
+  content: "4";
 }
